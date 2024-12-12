@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.heading{
+    width: 300px;
+    background-color: aqua;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+}
