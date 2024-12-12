@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 500px;
+    margin: auto;
+}
+#header{
+    width: 400px;
+    height: 60px;
+    padding: 15px;
+    text-align: end;
+    background-color: #97e5e5;
+}
+
+#sub-heading{
+    width: 400px;
+    height: 60px;
+    padding: 15px;
+    text-align: start;  
+}
+#list{
+    width: 400px;
+    height: 190px;
+    text-align: start;
+    background-color: rgb(72, 64, 64);
+    border-radius: 10px;
+    padding: 10px;
+}
+li{
+    list-style-type: none;
+    height: 30px;
+    width: 100%;
+}
