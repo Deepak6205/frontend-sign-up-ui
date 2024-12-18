@@ -24,7 +24,6 @@ function handleSubmitForm(event){
 
 function displayLocalStorageData(){
     const output = document.getElementById('output');
-    output.innerHTML='';
     for(let i = 0; i < localStorage.length; i++){
         const key = localStorage.key(i);
         const value = localStorage.getItem(key);

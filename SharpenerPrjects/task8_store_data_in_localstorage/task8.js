@@ -37,6 +37,7 @@ function submitForm(e){
     localStorage.setItem('Username',name.value);
     localStorage.setItem('Email', email.value);
     localStorage.setItem('Phone', phone.value);
+    displayLocalStorage();
     
 };
 
