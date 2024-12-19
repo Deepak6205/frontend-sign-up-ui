@@ -37,6 +37,11 @@ If you'd like to contribute to the project, please follow these steps:
 4. Push to the branch: `git push origin feature-name`.
 5. Create a pull request.
 
+# Sharpener 
+```bash
+ here all the sharpener tasks question you will find in the .js file of each tasks folder
+ ```
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
