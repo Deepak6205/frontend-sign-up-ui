@@ -30,13 +30,21 @@
 
 function submitForm(e){
     e.preventDefault();
-    const name = document.getElementById('username');
-    const email = document.getElementById('email');
-    const phone = document.getElementById('phone');
+    const name = e.target.username.value;
+    const email = e.target.email.value;
+    const phone = e.target.phone.value;
+
+    // or
+    // const name = document.getElementById('username');
+    // const email = document.getElementById('email');
+    // const phone = document.getElementById('phone');
+
+    // and setitem mai sare mai sabhi variable ke bagal mai .value kar dena
+    // eg:-localStorage.setItem('Username',name.value);
     
-    localStorage.setItem('Username',name.value);
-    localStorage.setItem('Email', email.value);
-    localStorage.setItem('Phone', phone.value);
+    localStorage.setItem('Username',name);
+    localStorage.setItem('Email', email);
+    localStorage.setItem('Phone', phone);
     displayLocalStorage();
     
 };
