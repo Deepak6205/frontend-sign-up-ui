@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>resturant app</h1>
+    <div class="container">
+        <form  id="data">
+            <label for="dish">choose dish:</label>
+            <input type="text" id="dish"/>
+            <label for="amount">add ammount:</label>
+            <input type="text" id="amount"/>
+            <label for="category">choose a table:</label>
+            <select id="category" name="category">
+                <option value="table1">table1</option>
+                <option value="table2">table2</option>
+                <option value="table3">table3</option>
+              </select>
+              <button type="submit" id="sub-btn">Add to Bill</button>
+        </form>
+    </div>
+    <div class="sub-container">
+        <h1 id="order">order</h1>
+        <div id="first">
+            <h2>table 1</h2>
+            <ul id="tab1"></ul>
+        </div>
+        <div id="second">
+            <h2>table 2</h2>
+            <ul id="tab2"></ul>
+        </div>
+        <div id="third">
+            <h2>table 3</h2>
+            <ul id="tab3"></ul>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+  }
+  
+  /* Header styling */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+  }
+  
+  /* Container for the form */
+  .container {
+    background-color: #fff;
+    width: 50%;
+    max-width: 600px;
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  input[type="text"], select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Sub-container (order section) */
+  .sub-container {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  
+  /* Table sections */
+  #first, #second, #third {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Ensure 3 columns fit in a row */
+    min-height: 300px;
+  }
+  
+  h2 {
+    text-align: center;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  li button {
+    background-color: #f44336;
+    color: white;
+    font-size: 14px;
+    padding: 6px;
+    width: 60px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  li button:hover {
+    background-color: #e53935;
+  }
+  
+  /* Media Queries for 16.5 inch display laptops (1366px wide) */
+  @media (max-width: 1366px) {
+    /* Adjust container form for medium screens */
+    .container {
+      width: 50%; /* Keep it centered but allows more width on medium screens */
+      max-width: 700px; /* Allow more width */
+    }
+  
+    /* Adjust the layout for table sections */
+    .sub-container {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  
+    #first, #second, #third {
+      width: 32%;
+    }
+  }
+  
+  /* Media Queries for smaller devices */
+  @media (max-width: 768px) {
+    /* Reduce container width for tablet devices */
+    .container {
+      width: 80%;
+    }
+  
+    /* Stack table sections vertically */
+    .sub-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #first, #second, #third {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Media Queries for very small screens (mobile) */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    form {
+      gap: 15px;
+    }
+  
+    button {
+      padding: 10px;
+      font-size: 1rem;
+    }
+  
+    li {
+      font-size: 0.9rem;
+    }
+  
+    #first, #second, #third {
+      width: 100%;
+    }
+  }
+  
+  
+  
+  
+  
