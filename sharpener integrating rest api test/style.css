@@ -1,0 +1,128 @@
+/* General container styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form styling */
+  .item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .item-details label {
+    font-weight: bold;
+  }
+  
+  .item-details input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .item-details button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .item-details button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Item list container */
+  .sub-container {
+    margin-top: 30px;
+  }
+  
+  .item-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .item-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-entry span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .item-entry input {
+    width: 80px;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .item-entry button {
+    padding: 8px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .item-entry button.buy-btn {
+    background-color: #2196F3;
+  }
+  
+  .item-entry button.buy-btn:hover {
+    background-color: #0b7dda;
+  }
+  
+  .item-entry button.delete-btn {
+    background-color: #f44336;
+  }
+  
+  .item-entry button.delete-btn:hover {
+    background-color: #da190b;
+  }
+  
+  /* Total display styling */
+  #total {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  

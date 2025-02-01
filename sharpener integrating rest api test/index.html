@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Your Shop</h1>
+    <div class="container">
+        <form class="item-details">
+            <label for="name">Name</label>
+            <input type="text" id="name"/>
+            <label for="price">Price:</label>
+            <input type="number" id="price"/>
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity"/>
+            <button type="submit" id="sub-btn">Add To Shop</button>
+        </form>
+        <div class="sub-container"></div>
+        <h2 id="total">Total:</h2>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
