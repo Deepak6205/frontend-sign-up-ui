@@ -76,25 +76,26 @@ body {
   /* Sub-container (order section) */
   .sub-container {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
-    justify-content: center;
+    flex-direction: row; /* Arrange tables in a row */
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
-    
-  }
-  
-  /* Table sections */
-  #first, #second, #third {
+    margin-bottom: 30px;
+}
+
+/* Table sections */
+#first, #second, #third {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    width: 50%; /* Ensure 3 columns fit in a row */
-    min-height: 300px;
-  }
-  
+    width: 30%; /* Make sure all tables fit in one row */
+    min-height: 250px; /* Reduce the height for a compact look */
+}
+
+
   h2 {
     text-align: center;
     text-align: center;
